@@ -5,23 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/d06e7bb3a3.js"
+      crossorigin="anonymous"
+    ></script>
     <title>About Me</title>
   </head>
   <body>
     <section class="header">
-      <p class="aboutname">MITCHELL PETERS</p>
+      <h1 class="aboutname">MITCHELL PETERS</h1>
       <nav>
         <div class="navlinks" id="navLinks">
           <i class="fa fa-solid fa-xmark" onclick="hideMenu()"></i>
           <ul>
             <li><a href="index.html">HOME</a></li>
             <li><a href="about.html">ABOUT ME</a></li>
-            <li><a href="">RESUME</a></li>
-            <li><a href="">CONTACT</a></li>
+            <li><a href="resume.html">RESUME</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
           </ul>
         </div>
-        <i class="fa fa-solid fa-bars" onclick="openMenu()"></i>
+        <i class="faboutopen fa-solid fa-bars" onclick="openMenu()"></i>
       </nav>
+      <div>
+        <p class="aboutparagraph">
+          Currently I am an undergrad student at Grand Valley State University
+          pursuing a B.S in Computer Science seeking to find a position in
+          software development
+        </p>
+      </div>
     </section>
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function openMenu() {
+        navLinks.style.right = "0";
+      }
+
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
   </body>
 </html>
